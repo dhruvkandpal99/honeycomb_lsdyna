@@ -14,6 +14,7 @@ The objective is to reproduce the main results using LS-DYNA and provide clean i
 ## ⚙️ Contents
 - ✅ LS-DYNA input files (`.k` files)
 - ✅ Results (crush simulation, response Force-Time plot)
+- ✅ CSV files of Force-Time curves (generated using https://plotdigitizer.com/app)
 - ✅ Comparision (jupyter notebooks)
 - ✅ Detailed report ([report.pdf](report.pdf))
 
@@ -21,7 +22,7 @@ The objective is to reproduce the main results using LS-DYNA and provide clean i
 
 ## 🔑 Main Objectives
 - Simulate the response of a 53-cell aluminum honeycomb under an EDST-induced blast load.
-- Use an accurate geometry-based shell mesh to capture realistic deformation.
+- Use an accurate geometry-based shell mesh to capture realistic deformation. [Click here to see the procedure.](https://youtu.be/dm4S_Yn3YtE?feature=shared)
 - **Validate key results:**  
   - Response **Force-Time curve**
   - Final crushed height of the honeycomb.
@@ -32,7 +33,9 @@ The objective is to reproduce the main results using LS-DYNA and provide clean i
 ## 🚀 How to Run
 1. **Requirements:**  
    - LS-DYNA version: LS-Run 2022 R1  
-   - LS-Prepost 4.7.7 
+   - LS-Prepost 4.7.7
+   - Python 3+
+   - Jupyter Notebooks
 
 2. **Run simulation:**  
    - Open the keyword (.k) file in LS-Prepost. 
@@ -41,9 +44,40 @@ The objective is to reproduce the main results using LS-DYNA and provide clean i
 
 \* In LS-Prepost, click on Keywrd tab> CONTROL> TIMESTEP, then change the TSSFAC to 0.0001, this would ensure accurate results but can take upto 2 days to run on workstation
 
+---
+
 ## 📊 Expected Results
 - d3plot, rcforc (drag the d3plot file into the LS-Prepost window to visualize the results)
-- Final Simulation and Plots:
+- Final Simulation (d3plot):
 
 https://github.com/user-attachments/assets/0d0790d2-4542-401b-b07f-d53abd668625
 
+  
+  
+  - Force Response (mN) vs time (ms) -- rcforc:
+<img src="https://github.com/user-attachments/assets/276416be-9150-4db9-859a-f8aaeebc72df" alt="forceVtime_simulated" width="500">
+
+  - Final Crushed Height:
+<img width="500" alt="Screenshot 2025-06-21 at 4 03 37 PM" src="https://github.com/user-attachments/assets/cc9cc956-40f5-4fb3-b266-ab6c590878b7" />
+
+---
+
+
+## ✅ Validation
+
+- Using Jupyter Notebook (python)
+<img src = "https://github.com/user-attachments/assets/b0fe2ad5-fe2e-4e6c-896b-8babf67842d8" alt="forceVtimeComparision" width ="500">
+  
+*Figure: Force (mN) vs time (ms) Comparision of True and Simulation values -- RMSE = 0.1895 (i.e., 18.95%)*
+
+
+- Final Crushed Height (as per paper)
+  
+<img width="600" alt="Screenshot 2025-06-21 at 4 16 21 PM" src="https://github.com/user-attachments/assets/ca1dca2e-d32e-4204-86f2-987d1332b1f4" />
+
+*Figure: Subsequent frames depicting compression of the honeycomb (as per paper)*
+
+---
+
+## 📄 Licence 
+This project is licensed under MIT License
