@@ -79,5 +79,11 @@ https://github.com/user-attachments/assets/0d0790d2-4542-401b-b07f-d53abd668625
 
 ---
 
+## 📚References
+
+Stanczak M, Fras T, Blanc L, Pawlowski P, Rusinek A. Blast-Induced Compression of a Thin-Walled Aluminum Honeycomb Structure—Experiment and Modeling. Metals. 2019; 9(12):1350. https://doi.org/10.3390/met9121350
+
+---
+
 ## 📄 Licence 
 This project is licensed under MIT License
