@@ -43,7 +43,7 @@ Read my blog for details: [my blog!](https://dhruvkandpal99.github.io/posts/mypo
    - Click on File> Run LS-DYNA
    - Run the simulation in LS-RUN with double precision 
 
-\* In LS-Prepost, click on Keywrd tab> CONTROL> TIMESTEP, then change the TSSFAC to 0.0001, this would ensure accurate results but can take upto 2 days to run on workstation
+\* In LS-Prepost, click on Keywrd tab> CONTROL> TIMESTEP, then change the TSSFAC to 0.5, this would ensure accurate results but will take a longer time to run
 
 ---
 
