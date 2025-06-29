@@ -9,6 +9,8 @@ by Magda Stanczak et al., published in Metals, 2019.
 
 The objective is to reproduce the main results using LS-DYNA and provide clean input decks and output files for verification and further study.
 
+Read my blog for details: [my blog!](https://dhruvkandpal99.github.io/posts/mypost/)
+
 ---
 
 ## ⚙️ Contents
@@ -16,7 +18,6 @@ The objective is to reproduce the main results using LS-DYNA and provide clean i
 - ✅ Results (crush simulation, response Force-Time plot)
 - ✅ CSV files of Force-Time curves (generated using https://plotdigitizer.com/app)
 - ✅ Comparision (jupyter notebooks)
-- ✅ Detailed report ([report.pdf](report.pdf))
 
 ---
 
